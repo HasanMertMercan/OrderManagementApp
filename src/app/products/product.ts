@@ -1,3 +1,6 @@
 export interface Product{
-    //TO-DO
+    id: number;
+    productCode: string;
+    productName: string;
+    unitPrice: number;
 }
