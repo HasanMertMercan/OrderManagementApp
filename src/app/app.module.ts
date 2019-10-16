@@ -2,9 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { ProductModule } from './products/product.module';
 
 
 @NgModule({
@@ -19,8 +19,8 @@ import { MainPageComponent } from './main-page/main-page.component';
       { path: '', redirectTo: 'anasayfa', pathMatch: 'full' },
       { path: '**', redirectTo: 'anasayfa', pathMatch: 'full' }
     ]),
+    //ProductModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
